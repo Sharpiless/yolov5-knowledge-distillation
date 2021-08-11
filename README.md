@@ -42,29 +42,8 @@ python train.py --weights weights/yolov5s.pt \
 
 ![](https://github.com/Sharpiless/Yolov5-distillation-train-inference/blob/main/data/images/all.png)
 
-# 准备数据集：
-
-默认会启用 data/voc.yaml 自动下载VOC数据集进行训练
-
-或者手动运行 data/scripts/get_voc2007.sh 下载
-
-如需修改成自己的数据集，则只需要修改yaml路径即可
 
 # 实验结果：
-
-数据集：
-
-VOC2007（补充的无标签数据使用VOC2012）
-
-GPU：2080Ti*1
-
-Batch Size：8
-
-Epoches：100
-
-Baseline：Yolov5s
-
-Teacher model：Yolov5l（mAP 0.5:0.95 = 0.541）
 
 
 这里假设VOC2012中新增加的数据为无标签数据（2k张）。
